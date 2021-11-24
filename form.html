@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulário</title>
+		<link rel="stylesheet" type="text/css" href="_css/stilo.css">
+		<script type="text/javascript" src="_js/validacoes.js"></script>
+	</head>	
+	<body>
+		<h1>Formulário</h1>
+		<a href="index.html">Voltar</a>
+		<form>
+				<!-- NOME -->
+			<p>NOME</p>
+				<input type="text" name="nome" id="nome">		
+				<!--EMAIL-->
+			<p>EMAIL</p>
+				<input type="email" name="email" placeholder="email@email.com" id="email">
+				<!--CELULAR-->
+			<p>CELULAR</p>
+				<input type="tel" id="fone" name="fone" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="(15) 99659-3716" maxlength="11"onblur="maskFone()">
+				<!--CPF-->
+			<p>CPF</p>
+				<input type="number" name="Cpf" placeholder="123.456.789-01" id="Cpf">
+				<!--GÊNERO-->
+			<p>GÊNERO</p>
+				<select class="form-select" aria-label="Default select" id="estadoCivil">
+					<option selected>Gênero</option>
+					<option>Masculino</option>
+					<option>Feminino</option>
+					<option>Outros</option>
+				</select>
+				<!--EstadoCivil-->
+			<p>ESTADO CIVIL</p>
+				<select class="form-select" aria-label="Default select" id="estadoCivil">
+					<option selected>Estado Civil</option>
+					<option>Solteiro(q)</option>
+					<option>casado(a)</option>
+					<option>separado(a</option>
+					<option>divorciado(a)</option>
+					<option>viúvo(a)</option>
+				</select>
+				<!--CEP-->
+			<p>CEP</p>
+				<input type="text" name="CEP" id="CEP">
+				<!--RUA-->
+			<p>RUA</p>
+				<input type="text" name="RUA" id="RUA">
+				<!--BAIRRO-->
+			<p>BAIRRO</p>
+				<input type="text" name="BAIRRO" id="BAIRRO">
+				<!--NÚMERO-->
+			<p>NÚMERO</p>
+				<input type="text" name="NÚMERO" id="NUMERO">
+				<!--ESTADO-->
+			<p>ESTADO</p>
+				<select id="estado" class="form-select" id="ESTADO">
+					<option selected value="estado">Selecione</option>
+					<option value="AC">Acre (AC)</option>
+					<option value="AL">Alagoas (AL)</option>
+					<option value="AP">Amapá (AP)</option>
+					<option value="AM">Amazonas (AM)</option>
+					<option value="BA">Bahia (BA)</option>
+					<option value="CE">Ceará (CE)</option>
+					<option value="DF">Distrito Federal (DF)</option>
+					<option value="ES">Espírito Santo (ES)</option>
+					<option value="GO">Goiás (GO)</option>
+					<option value="MA">Maranhão (MA)</option>
+					<option value="MT">Mato Grosso (MT)</option>
+					<option value="MS">Mato Grosso do Sul (MS)</option>
+					<option value="MG">Minas Gerais (MG)</option>
+					<option value="PA">Pará (PA)</option>
+					<option value="PB">Paraíba (PB)</option>
+					<option value="PR">Paraná (PR)</option>
+					<option value="PE">Pernambuco (PE)</option>
+					<option value="PI">Piauí (PI)</option>
+					<option value="RJ">Rio de Janeiro (RJ)</option>
+					<option value="RN">Rio Grande do Norte (RN)</option>
+					<option value="RS">Rio Grande do Sul (RS)</option>
+					<option value="RO">Rondônia (RO)</option>
+					<option value="RR">Roraima (RR)</option>
+					<option value="SC">Santa Catarina (SC)</option>
+					<option value="SP">São Paulo (SP)</option>
+					<option value="SE">Sergipe (SE)</option>
+					<option value="TO">Tocantins (TO)</option>
+				</select>
+				<!--CIDADE-->
+			<p>CIDADE</p>
+				<input type="text" name="CIDADE" id="CIDADE">
+			</br>
+				<button class="btn btn-primary" onclick="verificar()">CADASTRAR</button>
+		</form>
+	</body>
+	</html>
